@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
-import { TailSpin } from "react-loader-spinner";
+// import { TailSpin } from "react-loader-spinner";
 
 
 const CarDetail = () => {
@@ -45,19 +45,19 @@ const CarDetail = () => {
 }, [cars, id]);
 
 
-if (loading) {
-  return (
-    <div className="flex justify-center items-center h-[400px]">
-      <TailSpin
-        visible={true}
-        height="80"
-        width="80"
-        color="#1D4ED8" // Tailwind 'blue-700' as primary color
-        ariaLabel="tail-spin-loading"
-      />
-    </div>
-  );
-}
+// if (loading) {
+//   return (
+//     <div className="flex justify-center items-center h-[400px]">
+//       <TailSpin
+//         visible={true}
+//         height="80"
+//         width="80"
+//         color="#1D4ED8" // Tailwind 'blue-700' as primary color
+//         ariaLabel="tail-spin-loading"
+//       />
+//     </div>
+//   );
+// }
 
 if (!car) {
   return (
