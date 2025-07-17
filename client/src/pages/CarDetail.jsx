@@ -70,7 +70,7 @@ if (!car) {
 
   return (
     <>
-      <div className=" mt-[64px] mx-[128px]">
+      <div className=" mt-[24px] mx-[100px]  md:mt-[64px] md:mx-[128px]">
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-2 mb-6 text-gray-500 cursor-pointer"
@@ -83,7 +83,7 @@ if (!car) {
           />{" "}
           Back to all cars
         </button>
-        <div className="flex justify-center gap-[50px]">
+        <div className="flex flex-col md:flex-row justify-center gap-[50px]">
           <motion.div
            initial={{ y: 30, opacity: 0 }}
         animate={{ opacity: 1, y: 0 }}
@@ -185,7 +185,7 @@ if (!car) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6,delay:0.3}}
             onSubmit={ handelSubmit}
-            className=" py-[27px]  min-w-[390px] shadow-lg h-max sticky top-18 rounded-xl p-6 space-y-6 text-gray-500 "
+            className=" py-[27px] mb-[50px] md:mb-0  md:min-w-[390px] shadow-lg h-max sticky top-18 rounded-xl p-6 space-y-6 text-gray-500 "
           >
             <div className=" flex  flex-col gap-6">
               <div className="flex justify-between pb-[24px] border-b-1 border-boderColor">

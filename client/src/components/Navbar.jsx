@@ -54,7 +54,7 @@ const Navbar = () => {
       >
         <div className=" flex flex-col sm:flex-row gap-4 md:gap-6">
           {menuLinks.map((link, index) => (
-            <Link key={index} to={link.path}>
+            <Link key={index} to={link.path}  onClick={() => setOpen(false)}>
               {link.name}
             </Link>
           ))}

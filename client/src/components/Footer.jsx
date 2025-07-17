@@ -27,7 +27,7 @@ const Footer = () => {
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className=" mx-[80px] md:mt-[240px] sm:mt:[140px] sm:mx-[100px]  flex flex-wrap justify-between items-start gap-8 pb-6   border-b-1  border-boderColor "
+        className=" mx-[40px] md:mt-[240px] sm:mt:[140px] sm:mx-[100px]  flex flex-wrap justify-between items-start gap-8 pb-6   border-b-1  border-boderColor "
       >
         <div  className="">
           <motion.img 
@@ -107,7 +107,7 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6,delay:0.6}}
     
-      className="flex px-[128px] justify-between py-[20px]">
+      className=" flex flex-col gap-4 text-center  md:flex-row md:px-[128px] px-[20px]  md:justify-between py-[20px]">
         <p className=" text-gray-500 text-sm">
           ©{new Date().getFullYear()} Brand. All rights reserved.
         </p>

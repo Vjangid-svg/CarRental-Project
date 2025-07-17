@@ -31,8 +31,8 @@ const MyBooking = () => {
            initial={{ y: 30, opacity: 0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6}}
-    className='mt-[64px] px-[80px] sm:px-[192px]'>
-        <div className='flex flex-col justify-center items-center text-center  md:items-start md:text-left'>
+    className='mt-[64px] md:px-[80px] px-[40px] sm:px-[192px]'>
+        <div className='flex flex-col justify-center items-center text-center  mb-5  md:items-start md:text-left'>
             <h1 className='font-semibold text-4xl md:text-[40px]'>My Bookings</h1>
             <p className='text-sm md:text-base text-gray-500/90 mt-2 max-w-156'>View and manage your all car bookings</p>
         </div>
@@ -46,7 +46,7 @@ const MyBooking = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4,delay:index*0.1}}
 
-        key={booking._id} className='grid grid-cols-1 md:grid-cols-4 gap-6 p-6 border border-boderColor rounded-lg mt-5 first:mt-12'>
+        key={booking._id} className='grid grid-cols-1 mb-[30px] md:grid-cols-4 gap-6 p-2 md:p-6 border border-boderColor rounded-lg  first:mt-12'>
             <div className='md:col-span-1'>
                 <div><img className='w-full rounded-xl h-auto aspect-video object-cover' src={booking.car.image} alt="" /></div>
                 <p className='text-lg font-medium mt-2'>{booking.car.brand} {booking.car.model}</p>

@@ -41,7 +41,7 @@ const Hero = () => {
         animate={{ scale: 1, y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
         onSubmit={handelSearch}
-        className="bg-white py-[27px] min-w-[50%] m-auto shadow-[0px_8px_20px_rgba(0,0,0,0.1)] rounded-3xl sm:rounded-full p-6 items-start   "
+        className="sm:bg-white border-boderColor  py-[27px] w-[320px]  sm:min-w-[50%] m-auto shadow-[0px_8px_20px_rgba(0,0,0,0.1)] rounded-xl sm:rounded-full p-6 items-start   "
       >
         <div className=" flex flex-col sm:flex-row  pl-[32px] gap-6">
           <div className=" flex flex-col items-start   justify-between">
