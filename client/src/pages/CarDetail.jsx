@@ -70,7 +70,7 @@ if (!car) {
 
   return (
     <>
-      <div className=" mt-[24px] mx-[100px]  md:mt-[64px] md:mx-[128px]">
+      <div className=" mt-[24px] mx-[40px]  md:mt-[64px] md:mx-[128px]">
         <button
           onClick={() => navigate(-1)}
           className="flex items-center gap-2 mb-6 text-gray-500 cursor-pointer"
@@ -111,7 +111,7 @@ if (!car) {
                 </p>
               </div>
               <hr className="border-boderColor my-6" />
-              <div className="grid grid-cols-4 gap-4  pb-[24px]">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4  pb-[24px]">
                 <motion.div
                   initial={{ y: 10, opacity: 0 }}
         animate={{ opacity: 1, y: 0 }}
